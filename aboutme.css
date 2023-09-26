@@ -1,0 +1,123 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #2980b9, #8e44ad);
+}
+
+nav {
+  width: 50%;
+  height: 50px;
+  overflow: hidden;
+  background-color: #000000;
+  margin: auto;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+ 
+}
+
+a::after{
+  border-bottom: #ffffff solid 1px ;
+}
+
+#flexx {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+#flexx li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+#flexx a:hover {
+  border-bottom: rgb(5, 255, 38) solid 2px;
+}
+
+main {
+  margin: 80px auto 50px auto;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.2), -2px -3px 6px rgb(0, 0, 0, 0.2);
+  width: 70%;
+}
+
+/* This box holds both myimage and AboutMe content */
+#content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 10px;
+  padding: 20px 0 20px 0;
+}
+
+/* image setting */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* This is the box where my image is */
+#mycard {
+  width: 30%;
+  box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.2), -2px -4px 6px rgb(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: #ffffff;
+}
+
+#details {
+  width: 40%;
+  border: 1px #cccccc solid;
+  padding: 20px;
+  background-color: #ffffff;
+  color:#000000 ;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+#contactme{
+  
+    color: white;
+    text-decoration: none;
+}
+
+.btn{
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(34, 31, 31);
+    padding: 8px;
+}
+
+footer{
+
+  text-align: center;
+  color: #ffffff;
+}
+
+@media screen and (max-width:768px){
+ #content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #mycard {
+    text-align: center;
+  }
+
+  #mycard img {
+    max-width: 100%;
+  }
+
+}

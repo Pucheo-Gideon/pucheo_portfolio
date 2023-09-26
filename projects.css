@@ -1,0 +1,19 @@
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    /* background-color: black; */
+}
+
+.urls{
+    gap: 10px;
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 0 100px;
+}
+
+a{
+    color:black;
+}
