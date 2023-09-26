@@ -112,23 +112,111 @@ footer{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     margin: 0 100px;
+
 }
 
-.urls a{
-      color:black;
+
+
+.twitter-card {
+  display: flex;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 400px; 
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  margin: 10px;
+}
+
+.twitter-card:hover {
+  transform: scale(1.05);
+}
+
+.twitter-card-image {
+  flex: 1;
+  max-width: 200px;
+  overflow: hidden;
+}
+
+.twitter-card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Style the Twitter card content */
+.twitter-card-content {
+  flex: 2;
+  padding: 10px;
+}
+
+.twitter-card-content h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #333;
+}
+
+.twitter-card-content p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #666;
+}
+
+ /* .card_images{
+  width: 100%;
+  height: auto;
+ } */
+
+.backToIndex{
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(201, 200, 200);
+    padding: 8px;
+    text-align: center;
+    
+}
+
+.backToIndex a{
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.backToIndex:hover{
+   background-color: rgb(255, 255, 255);
 }
 @media screen and (max-width:768px){
+
+  main{
+    width: 100%;
+    background-color: transparent;
+    padding: 0 7px;
+  }
  #content {
     flex-direction: column;
     text-align: center;
   }
 
   #mycard {
-    text-align: center;
+    width: 100%;
   }
 
-  #mycard img {
+  /* #mycard img {
     max-width: 100%;
+  } */
+
+  #details{
+    width: 90%;
+
+  }
+
+  #details h3,ul, ol{
+    display: none;
   }
 
 }
