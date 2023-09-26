@@ -106,6 +106,17 @@ footer{
   color: #ffffff;
 }
 
+.urls{
+    gap: 10px;
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 0 100px;
+}
+
+.urls a{
+      color:black;
+}
 @media screen and (max-width:768px){
  #content {
     flex-direction: column;
